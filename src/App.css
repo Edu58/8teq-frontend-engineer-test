@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+.search {
+    max-width: 15%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search .nasdaq {
+    color: #51459E;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search  .companies {
+    background-color: #fff;
+    height: 60%;
+    border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.graph {
+    width: 85%;
 }
 
-.App-link {
-  color: #61dafb;
+.graph .company {
+    color: #51459E;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.graph .choose{
+    max-width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.graph .top .bx{
+    color: #51459E;
+}
+
+.graph .top .date {
+    max-width: 10rem;
+    max-height: 2rem;
+    background-color: #51459E;
+}
+
+.graph .choose select {
+    background-color: #51459E;
+    color: #fff;
 }
