@@ -42,7 +42,7 @@ function App() {
         .then(async res => await res.json())
         .then(data => {
           console.log(data)
-          const values = data.dataset.data
+          const values = data.dataset.data.reverse()
 
           // extract year to be used as labels and values to be used in y axis
           if (values) {
@@ -56,7 +56,7 @@ function App() {
     }
 
     getData()
-  }, [selectedChoice, startDate,endDate])
+  }, [selectedChoice, startDate, endDate])
 
   const graphData = {
     labels: labels,
@@ -95,7 +95,7 @@ function App() {
                 <i class='bx bx-calendar fs-2 me-1'></i>
                 <input type="date" className='date form-control text-light' min={oldest_available_date} max={newestAvailableDate} defaultValue={oldest_available_date} onChange={(e) => setStartDate(e.target.value)} />
               </div>
-              
+
             </div>
             <div className='d-flex flex-column'>
               <span className='text-center'>End Date {endDate ? null : <span className='text-danger'>*</span>}</span>
